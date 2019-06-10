@@ -65,3 +65,33 @@ val test=B()
 for(i in 0..10){}
 for(i in 0 until 10){}
 两者区别在于 前者 [0,10] 后者[0,10)
+
+
+### kotlin中的类
+
+#### 多个构造函数
+
+
+```kotlin
+//第一种写法  使用super关键字
+class A : View {
+    constructor(context: Context?):super(context)
+    constructor(context: Context?, attrs: AttributeSet?):super(context,attrs)
+    constructor(context: Context?, attrs: AttributeSet?, defStyleAttr: Int):super(context,attrs,defStyleAttr)
+}
+
+//第二种写法  
+class A(context: Context?, attrs: AttributeSet?, defStyleAttr: Int) :
+    LinearLayout(context, attrs, defStyleAttr) {
+    constructor(context: Context?):super(context,null,0)
+    constructor(context: Context?, attrs: AttributeSet?):this(context,attrs,0)
+}
+```
+第一种写法更加简洁明了
+
+#### 类初始化方法
+class A{
+  init {
+       //初始化代码放在此处进行
+    }
+}
