@@ -73,8 +73,8 @@ pagination_dir: page
 # Extensions
 ## Plugins: https://hexo.io/plugins/
 ## Themes: https://hexo.io/themes/
-## material pure next landscape
-theme: pure
+## material pure next landscape pure
+theme: landscape
 
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
