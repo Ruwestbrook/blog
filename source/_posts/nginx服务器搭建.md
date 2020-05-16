@@ -83,7 +83,7 @@ sudo service nginx restart
 
 安装 node
 
-```angular2html
+```bash
 sudo apt-get update
 
 sudo apt-get install nodejs
@@ -92,7 +92,7 @@ sudo apt-get install nodejs-legacy
 
 ```
 
-```angular2html
+```javascript
 
 var http = require('http');
 
@@ -111,7 +111,7 @@ console.log('Server running at http://127.0.0.1:8888/');
 
 接下去就是要配置二级域名了,还是打开nginx的配置文件,拉到最后,加入如下代码
 
-```angular2html
+```bash
 
 
 server {
@@ -125,7 +125,6 @@ server {
 
 ```
 保存退出,然后重启就可以访问了
-
 
 最后说一下php的CI框架,放在网站目录后你会发现无法访问,之前在apache上是使用rewrite模块和.hatccess文件重写路径访问
 百度了下只要在配置文件中加入这个文件的路径就好了
