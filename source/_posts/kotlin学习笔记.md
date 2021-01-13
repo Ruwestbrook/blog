@@ -12,7 +12,7 @@ var x:Boolean? x的取值可以为:true,false,null
 
         var x:Boolean?= null
         if(x==true){
-
+    
         }
 来判断
 
@@ -95,3 +95,9 @@ class A{
        //初始化代码放在此处进行
     }
 }
+
+#### vararg
+
+vararg 表示可变参数
+
+##
