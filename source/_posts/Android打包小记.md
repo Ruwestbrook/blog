@@ -5,7 +5,7 @@ tags:
 - android
 ---
 
-1. 压缩图片来减小apk体积,压缩地址:https://tinypng.com/
+1. 压缩图片来减小apk体积,压缩地址:https://tinypng.com/  可以用https://github.com/zhanyuzhang/super-tinypng 的快速压缩
 
 2. 减少支持的SO库构架,一般都有:armeabi-v7a,armeabi,armeabi-v8a,X86, 'mips', 'mips64'不用全部选择,
 然后如果SDK中需要那就没有办法(这个方法最减少apk体积)
